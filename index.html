@@ -10,7 +10,7 @@
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
       color: #1f2937;
-      background: #ffffff;
+      background-color: #ffffff;
     }
 
     nav {
@@ -21,35 +21,40 @@
     }
 
     nav a {
-      color: #0f172a;
+      color: #020617;
       margin: 0 18px;
       text-decoration: none;
       font-weight: 500;
     }
 
+    /* HERO */
     .hero {
       background:
-        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        linear-gradient(
+          rgba(255,255,255,0.9),
+          rgba(255,255,255,0.9)
+        ),
         url("https://images.unsplash.com/photo-1526378722484-bd91ca387e72");
       background-size: cover;
       background-position: center;
-      padding: 160px 20px;
+      padding: 180px 20px;
     }
 
     .container {
       max-width: 1200px;
       margin: auto;
-      padding: 90px 20px;
+      padding: 100px 20px;
     }
 
     h1 {
-      font-size: 56px;
+      font-size: 60px;
       margin-bottom: 20px;
       color: #020617;
+      letter-spacing: 1px;
     }
 
     h2 {
-      font-size: 36px;
+      font-size: 38px;
       margin-bottom: 20px;
       color: #020617;
     }
@@ -64,56 +69,66 @@
       font-size: 18px;
       line-height: 1.7;
       margin-bottom: 20px;
+      max-width: 900px;
     }
 
+    /* SPLIT */
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 60px;
+      gap: 70px;
       align-items: center;
     }
 
     .split img {
       width: 100%;
-      border-radius: 16px;
+      border-radius: 18px;
     }
 
+    /* IMAGE ROW */
+    .image-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
+      margin-top: 50px;
+    }
+
+    .image-row img {
+      width: 100%;
+      border-radius: 18px;
+    }
+
+    /* CARDS */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 35px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     .card {
       background: #f8fafc;
       border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 35px;
+      border-radius: 18px;
+      padding: 40px;
     }
 
-    .image-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .image-row img {
-      width: 100%;
-      border-radius: 16px;
-    }
-
-    .callout {
+    /* SOFT SECTION */
+    .soft {
       background: #f1f5f9;
-      padding: 110px 20px;
+    }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+      padding: 120px 20px;
     }
 
     footer {
       background: #020617;
       color: #cbd5e1;
       text-align: center;
-      padding: 70px 20px;
+      padding: 80px 20px;
       font-size: 14px;
     }
   </style>
@@ -133,8 +148,8 @@
     <h1>AUCTORLUX</h1>
     <p>
       AUCTORLUX is a cybersecurity and technology services firm
-      built to support secure, compliant, and well-structured
-      operations within government and regulated environments.
+      focused on clarity, compliance, and disciplined execution
+      within government and regulated environments.
     </p>
   </div>
 </div>
@@ -142,30 +157,23 @@
 <!-- WHO WE ARE -->
 <div class="container split">
   <div>
-    <h2>Who We Are</h2>
+    <h2>Built with Intention</h2>
     <p>
-      AUCTORLUX is an emerging cybersecurity firm focused on building
-      clear, disciplined, and compliance-aware capabilities aligned
-      with federal security expectations.
+      AUCTORLUX was established to bring structure, thoughtfulness,
+      and accountability to cybersecurity work in environments
+      where security expectations are high and margin for error is low.
     </p>
     <p>
-      We believe good security starts with clarity — clear documentation,
-      clear scope, and clear execution.
+      We believe good security is not loud. It is clear, documented,
+      and repeatable.
     </p>
   </div>
 
   <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" />
 </div>
 
-<!-- CYBER FOCUS -->
+<!-- IMAGE BREAK -->
 <div class="container">
-  <h2>Cybersecurity & Compliance Focus</h2>
-  <p>
-    Our work aligns with the NIST Risk Management Framework (RMF)
-    and applicable NIST Special Publications, including NIST SP 800-53.
-    We focus on environments where security and accountability matter.
-  </p>
-
   <div class="image-row">
     <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" />
     <img src="https://images.unsplash.com/photo-1581091012184-7c54b1a5d7f7" />
@@ -173,16 +181,22 @@
   </div>
 </div>
 
-<!-- CAPABILITIES OVERVIEW -->
-<div class="container">
-  <h2>What We Bring</h2>
+<!-- CYBER FOCUS -->
+<div class="container soft">
+  <h2>Cybersecurity & Compliance Focus</h2>
+  <p>
+    Our services align with the NIST Risk Management Framework (RMF)
+    and applicable NIST Special Publications, including NIST SP 800-53.
+    We focus on environments where traceability, documentation,
+    and accountability matter.
+  </p>
 
   <div class="cards">
     <div class="card">
       <h3>RMF & NIST Alignment</h3>
       <p>
-        Cybersecurity capabilities aligned with RMF processes and
-        NIST frameworks supporting secure and compliant systems.
+        Capabilities aligned with RMF processes and NIST frameworks
+        supporting secure and compliant systems.
       </p>
     </div>
 
@@ -190,7 +204,7 @@
       <h3>Security Documentation</h3>
       <p>
         Support for system security documentation, control tracking,
-        and audit-aware compliance activities.
+        and audit-aware cybersecurity activities.
       </p>
     </div>
 
@@ -210,38 +224,23 @@
   <div>
     <h2>How We Fit</h2>
     <p>
-      AUCTORLUX is structured to operate as a dependable subcontractor
-      within government programs where security, trust, and follow-through
-      are essential.
+      AUCTORLUX is structured to operate as a dependable cybersecurity
+      subcontractor within government programs.
     </p>
     <p>
-      We focus on being clear, responsive, and aligned with program needs.
+      We focus on being responsive, clear, and aligned with program
+      security expectations.
     </p>
   </div>
 </div>
 
-<!-- ROADMAP -->
-<div class="container">
-  <h2>Compliance Roadmap</h2>
-  <p>
-    AUCTORLUX aligns its cybersecurity foundation with RMF-based
-    and NIST-driven security expectations common across federal
-    and defense-adjacent environments.
-  </p>
-  <p>
-    The company plans to pursue CMMC Level 2 certification as part
-    of its long-term compliance strategy.
-  </p>
-</div>
-
-<!-- CALLOUT -->
-<div class="callout">
+<!-- CTA -->
+<div class="cta">
   <div class="container">
     <h2>Open to the Right Conversations</h2>
     <p>
       We welcome thoughtful discussions with prime contractors
-      seeking reliable cybersecurity support and clear alignment
-      within regulated programs.
+      seeking reliable, compliance-aware cybersecurity support.
     </p>
   </div>
 </div>
