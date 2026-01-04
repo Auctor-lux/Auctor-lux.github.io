@@ -10,19 +10,25 @@
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
       color: #1f2937;
-      background-color: #ffffff;
+      background: #ffffff;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 20px;
+    nav {
+      background: #020617;
+      padding: 20px;
+      text-align: center;
     }
 
-    /* HERO */
+    nav a {
+      color: #e5e7eb;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
     .hero {
       background:
-        linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+        linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.85)),
         url("https://images.unsplash.com/photo-1518770660439-4636190af475");
       background-size: cover;
       background-position: center;
@@ -30,31 +36,20 @@
       padding: 160px 20px;
     }
 
-    .hero h1 {
-      font-size: 58px;
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      font-size: 56px;
       margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
-
-    .hero p {
-      font-size: 22px;
-      max-width: 850px;
-      line-height: 1.6;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 100px 0;
     }
 
     h2 {
-      font-size: 38px;
+      font-size: 36px;
       margin-bottom: 20px;
-    }
-
-    h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
     }
 
     p {
@@ -63,51 +58,22 @@
       margin-bottom: 20px;
     }
 
-    /* SPLIT */
-    .split {
+    .image-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 60px;
-      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
 
-    .split img {
+    .image-grid img {
       width: 100%;
       border-radius: 12px;
     }
 
-    /* CARDS */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 35px;
-      margin-top: 50px;
-    }
-
-    .card {
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 35px;
-    }
-
-    /* CALLOUT */
-    .callout {
-      background: #0f172a;
-      color: #e5e7eb;
-      padding: 100px 20px;
-    }
-
-    .callout h2 {
-      color: #ffffff;
-    }
-
-    /* FOOTER */
     footer {
       background: #020617;
       color: #cbd5e1;
-      padding: 70px 20px;
       text-align: center;
+      padding: 60px 20px;
       font-size: 14px;
     }
   </style>
@@ -115,76 +81,41 @@
 
 <body>
 
-  <!-- HERO -->
-  <div class="hero">
-    <div class="container">
-      <h1>AUCTORLUX</h1>
-      <p>
-        AUCTORLUX is a cybersecurity and technology services firm
-        purpose-built to deliver RMF- and NIST-aligned cybersecurity
-        and compliance capabilities within government and regulated
-        environments.
-      </p>
-    </div>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="capabilities.html">Capabilities</a>
+  <a href="teaming.html">Teaming</a>
+</nav>
+
+<div class="hero">
+  <div class="container">
+    <h1>AUCTORLUX</h1>
+    <p>
+      AUCTORLUX is a cybersecurity and technology services firm
+      purpose-built to deliver RMF- and NIST-aligned cybersecurity
+      capabilities within government and regulated environments.
+    </p>
   </div>
+</div>
 
-  <!-- WHO WE ARE -->
-  <section>
-    <div class="container split">
-      <div>
-        <h2>Who We Are</h2>
-        <p>
-          AUCTORLUX is an emerging cybersecurity firm established to
-          support organizations operating in compliance-driven,
-          audit-sensitive, and mission-critical environments.
-        </p>
-        <p>
-          The company is intentionally structured to function as a
-          dependable subcontractor within prime-led government programs,
-          emphasizing documentation discipline, technical clarity,
-          and execution reliability.
-        </p>
-        <p>
-          Our focus is not breadth for marketing purposes, but depth
-          where security, compliance, and accountability matter.
-        </p>
-      </div>
+<div class="container">
+  <h2>Built for Security, Compliance, and Execution</h2>
+  <p>
+    AUCTORLUX was established with a clear focus on supporting
+    compliance-driven environments where discipline, documentation,
+    and security alignment matter.
+  </p>
 
-      <img
-        src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72"
-        alt="Cybersecurity operations"
-      />
-    </div>
-  </section>
+  <div class="image-grid">
+    <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72" />
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" />
+    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" />
+  </div>
+</div>
 
-  <!-- CAPABILITIES -->
-  <section>
-    <div class="container">
-      <h2>Cybersecurity Capabilities</h2>
-      <p>
-        AUCTORLUX provides cybersecurity and compliance-focused support
-        aligned to federal security expectations and industry-recognized
-        frameworks.
-      </p>
+<footer>
+  © 2026 AUCTORLUX · samuel@auctorlux.com · (240) 716-2886
+</footer>
 
-      <div class="cards">
-        <div class="card">
-          <h3>RMF & NIST Alignment</h3>
-          <p>
-            Capabilities aligned with the NIST Risk Management Framework
-            (RMF) and applicable NIST Special Publications, including
-            NIST SP 800-53.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Security Documentation Support</h3>
-          <p>
-            Support capabilities for system security documentation,
-            control implementation activities, compliance preparation,
-            and audit readiness.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Subcontractor Integration
+</body>
+</html>
