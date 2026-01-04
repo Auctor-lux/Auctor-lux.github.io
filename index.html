@@ -3,96 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Auctor Lux</title>
+  <title>Auctor Lux | Cybersecurity & Technology</title>
 
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
+      color: #1f2937;
       background-color: #ffffff;
-      color: #1f2933;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
     }
 
     /* HERO */
     .hero {
       background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url("https://images.unsplash.com/photo-1522071820081-009f0129c71c");
+        linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475");
       background-size: cover;
       background-position: center;
       color: #ffffff;
-      padding: 120px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
+      padding: 150px 20px;
     }
 
     .hero h1 {
-      font-size: 52px;
-      margin-bottom: 15px;
+      font-size: 56px;
+      margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 22px;
-      max-width: 720px;
+      max-width: 800px;
       line-height: 1.6;
     }
 
     /* SECTIONS */
     section {
-      padding: 90px 20px;
+      padding: 100px 0;
     }
 
     h2 {
-      font-size: 34px;
+      font-size: 36px;
       margin-bottom: 20px;
     }
 
     p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
-    /* SERVICES */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .card {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      padding: 30px;
-      background-color: #f9fafb;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 22px;
-    }
-
-    /* IMAGE SECTION */
+    /* SPLIT LAYOUT */
     .split {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 50px;
       align-items: center;
     }
 
     .split img {
       width: 100%;
+      border-radius: 12px;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      margin-top: 50px;
+    }
+
+    .service-box {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
       border-radius: 10px;
+      padding: 35px;
+    }
+
+    .service-box h3 {
+      margin-top: 0;
+      font-size: 22px;
+      margin-bottom: 10px;
     }
 
     /* FOOTER */
     footer {
-      background-color: #0f172a;
+      background: #0f172a;
       color: #cbd5e1;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
       font-size: 14px;
     }
@@ -106,67 +108,99 @@
     <div class="container">
       <h1>Auctor Lux</h1>
       <p>
-        Auctor Lux delivers structured, reliable, and security-minded services
-        for organizations that value clarity, compliance, and execution.
+        Auctor Lux is a cybersecurity and technology services firm
+        purpose-built to deliver RMF- and NIST-aligned cybersecurity
+        and compliance capabilities within government and regulated
+        environments.
       </p>
     </div>
   </div>
 
+  <!-- WHO WE ARE -->
+  <section>
+    <div class="container split">
+      <div>
+        <h2>Who We Are</h2>
+        <p>
+          Auctor Lux is an emerging cybersecurity firm focused on building
+          structured, compliance-aware capabilities aligned with federal
+          security expectations.
+        </p>
+        <p>
+          The company is organized to operate within prime-led government
+          programs, with an emphasis on documentation discipline,
+          audit readiness, and execution reliability.
+        </p>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72"
+        alt="Cybersecurity operations"
+      />
+    </div>
+  </section>
+
   <!-- SERVICES -->
   <section>
     <div class="container">
-      <h2>Our Services</h2>
+      <h2>Cybersecurity Capabilities</h2>
 
       <div class="services">
-        <div class="card">
-          <h3>Consulting & Advisory</h3>
+        <div class="service-box">
+          <h3>Cybersecurity Advisory</h3>
           <p>
-            Practical guidance and strategic insight for organizations
-            navigating operational and regulatory complexity.
+            Cybersecurity advisory and support capabilities aligned with
+            NIST frameworks and Risk Management Framework (RMF) processes.
           </p>
         </div>
 
-        <div class="card">
-          <h3>Technology & Compliance</h3>
+        <div class="service-box">
+          <h3>Compliance & Documentation Support</h3>
           <p>
-            Support across governance, security, and compliance initiatives
-            with a disciplined, audit-ready approach.
+            Capabilities supporting system security documentation,
+            control implementation activities, and compliance preparation
+            for regulated systems.
           </p>
         </div>
 
-        <div class="card">
-          <h3>Custom Solutions</h3>
+        <div class="service-box">
+          <h3>Subcontractor-Ready Support</h3>
           <p>
-            Tailored solutions aligned to mission objectives,
-            risk tolerance, and long-term growth.
+            Cybersecurity and compliance support designed to integrate
+            with defined scopes of work and prime-led delivery models.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- APPROACH -->
+  <!-- COMPLIANCE ALIGNMENT -->
   <section>
     <div class="container split">
+      <img
+        src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+        alt="Security compliance and analysis"
+      />
+
       <div>
-        <h2>Our Approach</h2>
+        <h2>Compliance Alignment</h2>
         <p>
-          We focus on substance over noise. Every engagement is grounded
-          in professionalism, accountability, and measurable outcomes.
+          Auctor Lux aligns its cybersecurity service foundation with
+          the NIST Risk Management Framework (RMF) and applicable
+          NIST Special Publications, including NIST SP 800-53.
+        </p>
+        <p>
+          The company plans to pursue CMMC Level 2 certification
+          to further support defense and CUI-related environments.
         </p>
       </div>
-
-      <img
-        src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
-        alt="Professional collaboration"
-      />
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     © 2026 Auctor Lux · All rights reserved<br />
-    Contact: samuel@auctorlux.com · (240) 716-2886
+    samuel@auctorlux.com · (240) 716-2886
   </footer>
 
 </body>
