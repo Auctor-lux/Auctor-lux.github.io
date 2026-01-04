@@ -10,41 +10,94 @@
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
       color: #1f2937;
+      background: #ffffff;
     }
 
     nav {
-      background: #020617;
-      padding: 20px;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 18px;
       text-align: center;
     }
 
     nav a {
-      color: #e5e7eb;
-      margin: 0 15px;
+      color: #0f172a;
+      margin: 0 18px;
       text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("https://images.unsplash.com/photo-1555949963-aa79dcee981c");
+      background-size: cover;
+      background-position: center;
+      padding: 140px 20px;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
       padding: 90px 20px;
     }
 
     h1 {
-      font-size: 48px;
-      margin-bottom: 30px;
+      font-size: 52px;
+      margin-bottom: 20px;
+      color: #020617;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #020617;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #020617;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
     }
 
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 50px;
+      gap: 60px;
       align-items: center;
     }
 
-    img {
+    .split img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 16px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 35px;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 70px 20px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -57,33 +110,85 @@
   <a href="teaming.html">Teaming</a>
 </nav>
 
-<div class="container split">
-  <div>
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
     <h1>Cybersecurity Capabilities</h1>
     <p>
-      AUCTORLUX provides cybersecurity and compliance-focused
-      capabilities aligned with the NIST Risk Management Framework (RMF)
-      and NIST Special Publications such as NIST SP 800-53.
-    </p>
-    <p>
-      Our focus is on structured support, documentation discipline,
-      and execution readiness within regulated environments.
+      AUCTORLUX provides cybersecurity and compliance-focused capabilities
+      designed for structured, regulated, and accountability-driven environments.
     </p>
   </div>
-
-  <img src="https://images.unsplash.com/photo-1510511450819-1c6f1b8e1b3a" />
 </div>
 
+<!-- OVERVIEW -->
 <div class="container split">
-  <img src="https://images.unsplash.com/photo-1581091012184-7c54b1a5d7f7" />
   <div>
+    <h2>Focused, Practical Cybersecurity</h2>
     <p>
-      Capabilities include cybersecurity documentation support,
-      compliance preparation, control implementation assistance,
-      and audit-aware security activities.
+      Our capabilities are aligned with the NIST Risk Management Framework (RMF)
+      and applicable NIST Special Publications, including NIST SP 800-53.
+    </p>
+    <p>
+      We focus on clarity, traceability, and documentation discipline —
+      the fundamentals that support secure and compliant systems.
+    </p>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1581091012184-7c54b1a5d7f7" />
+</div>
+
+<!-- CAPABILITY AREAS -->
+<div class="container">
+  <h2>Core Capability Areas</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>RMF & NIST Alignment</h3>
+      <p>
+        Support capabilities aligned with RMF processes and NIST frameworks,
+        focused on security control implementation, assessment readiness,
+        and compliance preparation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Security Documentation Support</h3>
+      <p>
+        Assistance with system security documentation, control tracking,
+        and audit-aware cybersecurity artifacts.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Compliance Preparation</h3>
+      <p>
+        Structured support for organizations preparing for compliance
+        activities within regulated and government environments.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ROADMAP -->
+<div class="container split">
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+  <div>
+    <h2>Compliance Alignment & Roadmap</h2>
+    <p>
+      AUCTORLUX aligns its service foundation with RMF-based and NIST-driven
+      security expectations common across federal and defense-adjacent programs.
+    </p>
+    <p>
+      The company plans to pursue CMMC Level 2 certification as part of its
+      long-term cybersecurity and compliance strategy.
     </p>
   </div>
 </div>
+
+<footer>
+  © 2026 AUCTORLUX · samuel@auctorlux.com · (240) 716-2886
+</footer>
 
 </body>
 </html>
