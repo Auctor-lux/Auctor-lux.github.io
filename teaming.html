@@ -10,29 +10,66 @@
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
       color: #1f2937;
+      background: #ffffff;
     }
 
     nav {
-      background: #020617;
-      padding: 20px;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 18px;
       text-align: center;
     }
 
     nav a {
-      color: #e5e7eb;
-      margin: 0 15px;
+      color: #0f172a;
+      margin: 0 18px;
       text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+      background-size: cover;
+      background-position: center;
+      padding: 140px 20px;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
       padding: 90px 20px;
     }
 
     h1 {
-      font-size: 46px;
+      font-size: 52px;
       margin-bottom: 20px;
+      color: #020617;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #020617;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 60px;
+      align-items: center;
+    }
+
+    .split img {
+      width: 100%;
+      border-radius: 16px;
     }
 
     .image-row {
@@ -44,7 +81,15 @@
 
     .image-row img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 16px;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 70px 20px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -57,23 +102,65 @@
   <a href="teaming.html">Teaming</a>
 </nav>
 
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <h1>Teaming & Subcontracting</h1>
+    <p>
+      AUCTORLUX is structured to operate as a reliable cybersecurity
+      subcontractor within prime-led government and regulated programs.
+    </p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container split">
+  <div>
+    <h2>How We Work with Primes</h2>
+    <p>
+      We are intentional about fit. AUCTORLUX focuses on supporting
+      defined scopes of work where cybersecurity discipline,
+      documentation quality, and clear communication matter.
+    </p>
+    <p>
+      Our approach emphasizes responsiveness, transparency,
+      and alignment with program objectives.
+    </p>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" />
+</div>
+
+<!-- VALUES -->
 <div class="container">
-  <h1>Teaming & Subcontracting</h1>
+  <h2>What You Can Expect</h2>
   <p>
-    AUCTORLUX is structured to operate as a dependable cybersecurity
-    subcontractor within prime-led government programs.
-  </p>
-  <p>
-    We value clarity of scope, disciplined execution, and alignment
-    with program security requirements.
+    We aim to reduce risk for prime contractors by being dependable,
+    prepared, and aligned with security expectations.
   </p>
 
   <div class="image-row">
+    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" />
     <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
     <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" />
-    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" />
   </div>
 </div>
+
+<!-- INVITE -->
+<div class="container">
+  <h2>Open to the Right Conversations</h2>
+  <p>
+    AUCTORLUX welcomes discussions with prime contractors seeking
+    thoughtful, security-aware subcontractor support.
+  </p>
+  <p>
+    We value mutual clarity, aligned expectations, and collaborative delivery.
+  </p>
+</div>
+
+<footer>
+  © 2026 AUCTORLUX · samuel@auctorlux.com · (240) 716-2886
+</footer>
 
 </body>
 </html>
