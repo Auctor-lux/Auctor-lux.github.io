@@ -14,42 +14,50 @@
     }
 
     nav {
-      background: #020617;
-      padding: 20px;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 18px;
       text-align: center;
     }
 
     nav a {
-      color: #e5e7eb;
-      margin: 0 15px;
+      color: #0f172a;
+      margin: 0 18px;
       text-decoration: none;
       font-weight: 500;
     }
 
     .hero {
       background:
-        linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.85)),
-        url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("https://images.unsplash.com/photo-1526378722484-bd91ca387e72");
       background-size: cover;
       background-position: center;
-      color: #ffffff;
       padding: 160px 20px;
     }
 
     .container {
       max-width: 1200px;
       margin: auto;
-      padding: 80px 20px;
+      padding: 90px 20px;
     }
 
     h1 {
       font-size: 56px;
       margin-bottom: 20px;
+      color: #020617;
     }
 
     h2 {
       font-size: 36px;
       margin-bottom: 20px;
+      color: #020617;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #020617;
     }
 
     p {
@@ -58,22 +66,54 @@
       margin-bottom: 20px;
     }
 
-    .image-grid {
+    .split {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 60px;
+      align-items: center;
     }
 
-    .image-grid img {
+    .split img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 16px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 35px;
+    }
+
+    .image-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .image-row img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .callout {
+      background: #f1f5f9;
+      padding: 110px 20px;
     }
 
     footer {
       background: #020617;
       color: #cbd5e1;
       text-align: center;
-      padding: 60px 20px;
+      padding: 70px 20px;
       font-size: 14px;
     }
   </style>
@@ -87,29 +127,122 @@
   <a href="teaming.html">Teaming</a>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
   <div class="container">
     <h1>AUCTORLUX</h1>
     <p>
       AUCTORLUX is a cybersecurity and technology services firm
-      purpose-built to deliver RMF- and NIST-aligned cybersecurity
-      capabilities within government and regulated environments.
+      built to support secure, compliant, and well-structured
+      operations within government and regulated environments.
     </p>
   </div>
 </div>
 
+<!-- WHO WE ARE -->
+<div class="container split">
+  <div>
+    <h2>Who We Are</h2>
+    <p>
+      AUCTORLUX is an emerging cybersecurity firm focused on building
+      clear, disciplined, and compliance-aware capabilities aligned
+      with federal security expectations.
+    </p>
+    <p>
+      We believe good security starts with clarity — clear documentation,
+      clear scope, and clear execution.
+    </p>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" />
+</div>
+
+<!-- CYBER FOCUS -->
 <div class="container">
-  <h2>Built for Security, Compliance, and Execution</h2>
+  <h2>Cybersecurity & Compliance Focus</h2>
   <p>
-    AUCTORLUX was established with a clear focus on supporting
-    compliance-driven environments where discipline, documentation,
-    and security alignment matter.
+    Our work aligns with the NIST Risk Management Framework (RMF)
+    and applicable NIST Special Publications, including NIST SP 800-53.
+    We focus on environments where security and accountability matter.
   </p>
 
-  <div class="image-grid">
-    <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72" />
+  <div class="image-row">
     <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" />
-    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" />
+    <img src="https://images.unsplash.com/photo-1581091012184-7c54b1a5d7f7" />
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+  </div>
+</div>
+
+<!-- CAPABILITIES OVERVIEW -->
+<div class="container">
+  <h2>What We Bring</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>RMF & NIST Alignment</h3>
+      <p>
+        Cybersecurity capabilities aligned with RMF processes and
+        NIST frameworks supporting secure and compliant systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Security Documentation</h3>
+      <p>
+        Support for system security documentation, control tracking,
+        and audit-aware compliance activities.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Subcontractor Support</h3>
+      <p>
+        Cybersecurity support designed to integrate smoothly into
+        prime-led teams and defined scopes of work.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- HOW WE FIT -->
+<div class="container split">
+  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" />
+  <div>
+    <h2>How We Fit</h2>
+    <p>
+      AUCTORLUX is structured to operate as a dependable subcontractor
+      within government programs where security, trust, and follow-through
+      are essential.
+    </p>
+    <p>
+      We focus on being clear, responsive, and aligned with program needs.
+    </p>
+  </div>
+</div>
+
+<!-- ROADMAP -->
+<div class="container">
+  <h2>Compliance Roadmap</h2>
+  <p>
+    AUCTORLUX aligns its cybersecurity foundation with RMF-based
+    and NIST-driven security expectations common across federal
+    and defense-adjacent environments.
+  </p>
+  <p>
+    The company plans to pursue CMMC Level 2 certification as part
+    of its long-term compliance strategy.
+  </p>
+</div>
+
+<!-- CALLOUT -->
+<div class="callout">
+  <div class="container">
+    <h2>Open to the Right Conversations</h2>
+    <p>
+      We welcome thoughtful discussions with prime contractors
+      seeking reliable cybersecurity support and clear alignment
+      within regulated programs.
+    </p>
   </div>
 </div>
 
