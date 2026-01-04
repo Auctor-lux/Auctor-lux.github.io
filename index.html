@@ -7,26 +7,47 @@
 
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      background-color: #f7f7f7;
-      color: #222;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1f2933;
+    }
+
+    /* HERO */
+    .hero {
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1522071820081-009f0129c71c");
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      padding: 120px 20px;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
-      padding: 60px 20px;
     }
 
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      max-width: 720px;
+      line-height: 1.6;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 20px;
     }
 
     h2 {
-      margin-top: 40px;
-      font-size: 24px;
+      font-size: 34px;
+      margin-bottom: 20px;
     }
 
     p {
@@ -34,41 +55,119 @@
       line-height: 1.6;
     }
 
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 30px;
+      background-color: #f9fafb;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    /* IMAGE SECTION */
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .split img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* FOOTER */
     footer {
-      margin-top: 60px;
+      background-color: #0f172a;
+      color: #cbd5e1;
+      padding: 50px 20px;
+      text-align: center;
       font-size: 14px;
-      color: #666;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>AuctorLux</h1>
-
-    <p>
-      Auctor Lux provides professional services focused on reliability,
-      security, and results. We work with organizations that value clarity,
-      compliance, and trust.
-    </p>
-
-    <h2>Services</h2>
-    <p>
-      • Consulting and advisory services<br>
-      • Technology and compliance support<br>
-      • Strategic solutions tailored to client needs
-    </p>
-
-    <h2>Contact</h2>
-    <p>
-      Email: samuel@auctorlux.com<br>
-      Phone: (240) 716-2886
-    </p>
-
-    <footer>
-      © 2026 Auctor Lux. All rights reserved.
-    </footer>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container">
+      <h1>Auctor Lux</h1>
+      <p>
+        Auctor Lux delivers structured, reliable, and security-minded services
+        for organizations that value clarity, compliance, and execution.
+      </p>
+    </div>
   </div>
+
+  <!-- SERVICES -->
+  <section>
+    <div class="container">
+      <h2>Our Services</h2>
+
+      <div class="services">
+        <div class="card">
+          <h3>Consulting & Advisory</h3>
+          <p>
+            Practical guidance and strategic insight for organizations
+            navigating operational and regulatory complexity.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Technology & Compliance</h3>
+          <p>
+            Support across governance, security, and compliance initiatives
+            with a disciplined, audit-ready approach.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Custom Solutions</h3>
+          <p>
+            Tailored solutions aligned to mission objectives,
+            risk tolerance, and long-term growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section>
+    <div class="container split">
+      <div>
+        <h2>Our Approach</h2>
+        <p>
+          We focus on substance over noise. Every engagement is grounded
+          in professionalism, accountability, and measurable outcomes.
+        </p>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
+        alt="Professional collaboration"
+      />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Auctor Lux · All rights reserved<br />
+    Contact: samuel@auctorlux.com · (240) 716-2886
+  </footer>
 
 </body>
 </html>
